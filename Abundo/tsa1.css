@@ -1,0 +1,202 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(223, 195, 200);
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.profile_picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+#pic {
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid rgb(233, 188, 196) 5px;
+    box-shadow: 0 0 25px #E6ADD8;
+    overflow: hidden;
+}
+
+#pic:hover{
+    transform: scale(1.1);
+}
+
+.resume_box {
+    display: flex;
+    width: 875px;
+    height: 1000px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    border: solid black;
+}
+
+.sidebar {
+    width: 40%;
+    padding: 1rem;
+    background-color: #dcc9eb;
+    border-radius:25px 0 0 25px;
+}
+
+.contact, .socials, .skills {
+    margin-bottom:50px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sidebar p, .sidebar ul {
+    border-top: solid 1px;
+}
+.contact:hover, .socials:hover, .skills:hover{
+    color: #E6ADD8;
+    font-weight: bold;
+    transform: scale(1.02);
+}
+
+.sidebar h3 {
+    font-size: 32px;
+    color: #4f2db4;
+}
+
+.sidebar p ,.sidebar ul{
+    font-size: 24px;
+    color: #2e1e5e;
+}
+
+.main_box {
+    width: 65%;
+    background-color: #c5a4e4;
+    padding: 2.5rem;
+    border-radius: 0  25px 25px 0;
+}
+
+.resume_title h1 {
+    font-size: 34px;
+}
+
+.resume_title p {
+    font-size: 22px;
+}
+.name {
+    color: #221153;
+}
+.titles, .seminar, .resume_title p{
+    margin-bottom: 45px;
+    color: #221153;
+}
+.titles h3 , .seminar h3{
+    font-size: 32px;
+    border-bottom: solid 1px;
+}
+
+.titles p, .seminar p{
+    font-size: 20px;
+}
+
+.seminar h4 {
+    font-size: 22px;
+}
+
+.name:hover{
+transform: scale(1.01);
+}
+
+.titles:hover, .seminar:hover {
+transform: scale(1.02);
+color: rgb(19, 19, 109);
+}
+
+#colorbutton {
+    width: 100px;
+    height: 25px;
+    margin: 0px;
+    padding: 0;
+}
+
+body.blue-mode {
+    background-color: #87CEEB; 
+    color: #003366;           
+}
+
+body.blue-mode .resume_box {
+    background-color: #B0E0E6; 
+    border-color: #4682B4;     
+}
+
+body.blue-mode .sidebar {
+    background-color: #ADD8E6; 
+}
+
+body.blue-mode .sidebar h3, 
+body.blue-mode .sidebar p, 
+body.blue-mode .sidebar ul {
+    color: #003366; 
+}
+
+body.blue-mode .main_box {
+    background-color: #AFEEEE; 
+}
+
+body.blue-mode .titles h3, 
+body.blue-mode .titles p, 
+body.blue-mode .seminar h3, 
+body.blue-mode .seminar p {
+    color: #003366; 
+}
+
+#colorbutton {
+  width: 120px;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 1000;
+  align-items: center;
+  appearance: none;
+  background-image: linear-gradient(1deg, #141303, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 25px;
+  border-width: 0;
+  border: solid 1px black;
+  box-shadow: black 3px 3px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.colorbutton:active,
+.colorbutton:focus {
+  outline: none;
+}
+
+.colorbutton:hover {
+  background-position: -20px -20px;
+}
+
+.colorbutton:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
