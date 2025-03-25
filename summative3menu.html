@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Guide</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="top">
+            <div class="text-white fw-bold fs-2 ribbon">
+                <p>BEST OF PINOY</p>
+            </div>
+            <div class="text-white fw-bold fs-1">GAB'S CUISINE</div>
+            <input type="button" value="MAIN MENU" class="main_menu" onclick="closeAllModals()">
+        </div>
+
+        <!-- Dish cards -->
+        <div class="menu-item">
+            <div class="card card_mechado" onclick="openMenuModal('mechadoModal')">
+                <div class="card-title">
+                    <p>Mechado</p>
+                </div>
+                <div class="card-description">
+                    <p>Beef stew braised with soy sauce, calamansi, and tomato sauce.</p>
+                    <p id="show-more">More</p>
+                </div>
+            </div>
+
+            <div class="card card_menudo" onclick="openMenuModal('menudoModal')">
+                <div class="card-title">
+                    <p>Menudo</p>
+                </div>
+                <div class="card-description">
+                    <p>Pork, liver, and veggies in rich tomato sauce.</p>
+                    <p id="show-more">More</p>
+                </div>
+            </div>
+
+            <div class="card card_caldereta" onclick="openMenuModal('calderetaModal')">
+                <div class="card-title">
+                    <p>Caldereta</p>
+                </div>
+                <div class="card-description">
+                    <p>Spicy tomato-based beef stew with liver spread and cheese.</p>
+                    <p id="show-more">More</p>
+                </div>
+            </div>
+
+            <div class="card card_afritada" onclick="openMenuModal('afritadaModal')">
+                <div class="card-title">
+                    <p>Afritada</p>
+                </div>
+                <div class="card-description">
+                    <p>Chicken stew with tomato sauce, potatoes, carrots, and bell peppers.</p>
+                    <p id="show-more">More</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="mechadoModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content flex-row">
+                <div class="modal_title">
+                    <h1>MECHADO</h1>
+                </div>
+                <div class="modal-image" style="flex:1;">
+                    <img src="mechado.jpg" alt="Mechado" class="w-100 h-100">
+                </div>
+                <div class="modal-description p-4" style="flex:1;">
+                    <h1 class="restaurant-name">GAB'S CUISINE</h1>
+                    <p>The name "mechado" comes from the Spanish word "mechar," meaning "to stuff" or "to lard,"
+                        referring to the technique of inserting strips of fatback into the beef, which adds moisture and
+                        flavor. <br> <br>The main ingredients include beef, soy sauce, calamansi, black pepper, onions,
+                        and
+                        sometimes potatoes and carrots.<br> <br>Mechado stands out from other Filipino tomato-based
+                        stews like kaldereta, afritada, and menudo with its tangy, savory flavor profile, and the use of
+                        larding. </p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="menudoModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content flex-row">
+                <div class="modal_title">
+                    <h1>MENUDO</h1>
+                </div>
+                <div class="modal-image" style="flex:1;">
+                    <img src="menudo.jpg" alt="Menudo" class="w-100 h-100 img_menudo">
+                </div>
+                <div class="modal-description p-4" style="flex:1;">
+                    <h1 class="restaurant-name">GAB'S CUISINE</h1>
+                    <p> The word "menudo" comes from Spanish, meaning "small bits". <br><br>The sauce is known for its
+                        sweet and savory flavor, with the tomatoes providing a bright, acidic
+                        counterpoint to the richness of the pork and liver. <br><br> The dish typically features cubed
+                        pork, sliced pork liver, potatoes, carrots, and sometimes bell peppers, all simmered in a
+                        tomato-based sauce.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="calderetaModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content flex-row">
+                <div class="modal_title">
+                    <h1>CALDERETA</h1>
+                </div>
+
+                <div class="modal-image" style="flex:1;">
+                    <img src="caldereta.jpg" alt="Caldereta" class="w-100 h-100">
+                </div>
+                <div class="modal-description p-4" style="flex:1;">
+                    <h1 class="restaurant-name">GAB'S CUISINE</h1>
+                    <p>The name "caldereta" comes from the Spanish word "caldera," meaning "cauldron," reflecting the
+                        traditional method of cooking the stew in a large pot. <br><br>Caldereta is a beloved comfort
+                        food in the Philippines, enjoyed during family gatherings, fiestas, and special celebrations.
+                        Caldereta is often served hot with white rice, making it a hearty and satisfying meal. <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="afritadaModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content flex-row">
+                <div class="modal_title">
+                    <h1>AFRITADA</h1>
+                </div>
+                <div class="modal-image" style="flex:1;">
+                    <img src="afritada.jpg" alt="Afritada" class="w-100 h-100">
+                </div>
+                <div class="modal-description p-4" style="flex:1;">
+                    <h1 class="restaurant-name">GAB'S CUISINE</h1>
+                    <p>The name "afritada" comes from the Spanish word "fritada," meaning "fried," reflecting the
+                        initial step of sautéing the meat and aromatics before stewing. <br><br>The meat is first
+                        sautéed, then simmered in the tomato sauce along with the vegetables until tender. <br><br>
+                        Afritada is typically served hot over white rice. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
